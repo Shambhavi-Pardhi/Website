@@ -1,0 +1,44 @@
+<p class="heading" style="text-align: center">Submit your valid details!</p>
+
+<div> 
+ <form [formGroup]="userForm">
+  <div>
+    Name:
+    <input formControlName="name" type="text"  placeholder="Enter Name">
+	<label *ngIf="userForm.get('name').invalid" [ngClass] = "'error'"> Name is required. </label>
+  </div>
+  <div> 
+    Email: <input formControlName="email" type="email"  placeholder="Enter Email">
+	<label *ngIf="userForm.get('email').invalid" [ngClass] = "'error'"> Email is required. </label>
+  </div>
+
+  <div>Feedback: 
+      <label> 
+        <input formControlName="feedback" type="radio" name="feedback" value="Great" (click)="setradio('Great')" [checked]='true'>  
+        Great  
+      </label>  
+      <label>  
+        <input formControlName="feedback" type="radio" name="feedback" value="Okay" (click)="setradio('Okay')" [checked]='true'>  
+        Okay
+      </label>  
+      <label>  
+        <input formControlName="feedback" type="radio" name="feedback" value="Not Good" (click)="setradio('Not Good')" [checked]='true'>  
+        Not Good
+      </label>  
+    <label *ngIf="userForm.get('feedback').invalid" [ngClass] = "'error'"> Feedback is required. </label>
+  </div>
+  <div>
+    Comment: <input formControlName="comment" placeholder="Enter Comment">
+  </div>
+  <div>
+    <button mat-button (click)="onFormSubmit(userForm.value)">Submit</button>
+  
+    <button mat-button (click)="resetForm()">Reset</button>
+  </div>
+ </form>
+<div> 
+
+
+
+
+

@@ -1,0 +1,37 @@
+@import '~@angular/material/theming';
+
+.head {
+    padding: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.719);
+    border-radius: 5px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    transform: translateX(225%);
+    color: rgb(15, 86, 107);
+}
+
+.left {
+    padding: 25px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    transform: translateX(225px);
+    transform: translateY(100%);
+    color: rgb(15, 86, 107);
+}
+
+.right {
+    padding: 25px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    transform: translateX(10000%);
+    transform: translateY(100%);
+    color: rgb(15, 86, 107);
+}
+

@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+
+.center {
+  position: absolute;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: ivory;;
+  left: 50%;
+  transform: translateX(-75%);
+  background-position: 0%;
+}
+
+.container {
+  background-color: teal;
+}
+

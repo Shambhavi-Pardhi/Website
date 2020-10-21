@@ -1,0 +1,47 @@
+@import '~@angular/material/theming';
+
+
+form {
+    position: absolute;
+    transform: translateX(500px);
+}
+
+div {
+    
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+input {
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: rgb(255, 255, 255);     
+}
+
+button { 
+    font-size: 25px;
+    color: rgb(36, 118, 121);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex: 1 1 auto;
+  }
+
+.heading {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(15, 86, 107);
+    background-color: rgb(255, 255, 255);
+}
+
+.error{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+} 
+
+  
